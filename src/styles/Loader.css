@@ -1,0 +1,228 @@
+.container {
+    width: 250px;
+    height: 550px;
+    margin: 100px auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carga {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./imagen/frio.png');
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cloud {
+    width: 250px;
+  }
+  
+  .front {
+    padding-top: 45px;
+    margin-left: 25px;
+    display: inline;
+    position: absolute;
+    z-index: 11;
+    animation: clouds 8s infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .back {
+    margin-top: -30px;
+    margin-left: 150px;
+    z-index: 12;
+    animation: clouds 12s infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .right-front {
+    width: 45px;
+    height: 45px;
+    border-radius: 50% 50% 50% 0%;
+    background-color: #4c9beb;
+    display: inline-block;
+    margin-left: -15px;
+    z-index: 5;
+  }
+  
+  .left-front {
+    width: 65px;
+    height: 65px;
+    border-radius: 50% 50% 0% 50%;
+    background-color: #4c9beb;
+    display: inline-block;
+    z-index: 5;
+  }
+  
+  .right-back {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 50% 0%;
+    background-color: #4c9beb;
+    display: inline-block;
+    margin-left: -10px;
+    z-index: 5;
+  }
+  
+  .left-back {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 0% 50%;
+    background-color: #4c9beb;
+    display: inline-block;
+    margin-left: 70px;
+    z-index: 5;
+  }
+  
+  .sun {
+    width: 120px;
+    height: 120px;
+    background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
+    background: linear-gradient(to right, #fcbb04, #fffc00);
+    border-radius: 60px;
+    display: inline;
+    position: absolute;
+  }
+  
+  .sunshine {
+    animation: sunshines 2s infinite;
+  }
+  
+  
+  @keyframes sunshines {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+  
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes clouds {
+    0% {
+      transform: translateX(15px);
+    }
+  
+    50% {
+      transform: translateX(0px);
+    }
+  
+    100% {
+      transform: translateX(15px);
+    }
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    .container {
+      width: 200px;
+      height: 450px;
+    }
+  
+    .cloud {
+      width: 200px;
+    }
+  
+    .front {
+      padding-top: 35px;
+      margin-left: 20px;
+    }
+  
+    .back {
+      margin-top: -25px;
+      margin-left: 120px;
+    }
+  
+    .right-front {
+      width: 40px;
+      height: 40px;
+      margin-left: -12px;
+    }
+  
+    .left-front {
+      width: 55px;
+      height: 55px;
+    }
+  
+    .right-back {
+      width: 45px;
+      height: 45px;
+      margin-left: -8px;
+    }
+  
+    .left-back {
+      width: 25px;
+      height: 25px;
+      margin-left: 50px;
+    }
+  
+    .sun {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 150px;
+      height: 350px;
+    }
+  
+    .cloud {
+      width: 150px;
+    }
+  
+    .front {
+      padding-top: 25px;
+      margin-left: 15px;
+    }
+  
+    .back {
+      margin-top: -15px;
+      margin-left: 80px;
+    }
+  
+    .right-front {
+      width: 30px;
+      height: 30px;
+      margin-left: -5px;
+    }
+  
+    .left-front {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .right-back {
+      width: 35px;
+      height: 35px;
+      margin-left: -6px;
+    }
+  
+    .left-back {
+      width: 20px;
+      height: 20px;
+      margin-left: 40px;
+    }
+  
+    .sun {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+    }
+  }
+  

@@ -1,0 +1,88 @@
+
+.box1 {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-right: 1.5em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    justify-items: stretch;
+    align-items: flex-start; 
+    color: aliceblue;
+  }
+  
+  .fecha {
+    align-items: flex-start;
+    margin-right: auto;
+  }
+  
+  .ciudad {
+    align-items: flex-start;
+    margin-left: auto;
+  }
+  
+  .icono {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  
+  .clima {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  
+  .country {
+    position: relative;
+    margin-right: auto;
+  }
+  
+  .datos {
+    position: relative;
+    margin-right: auto;
+  }
+  
+  
+  .box2{
+      border: 1px solid rgb(255, 255, 255);
+      padding: 1em;
+      margin-bottom: 1em;
+      border-radius: 1em;
+      margin-left: 1em;
+      margin-right: 1.5em;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+      color: aliceblue;
+  }
+  
+  .superFrio {
+    background-image: url('./imagen/superFrio.png');
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  .frio {
+    background-image: url('./imagen/frio.png');
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  .templado {
+    width: 100%;
+    background-image: url('./imagen/templado.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  
+  .calor {
+    
+    background-image: url('./imagen/calor.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
